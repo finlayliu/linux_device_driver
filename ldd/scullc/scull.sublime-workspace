@@ -1,0 +1,202 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "main.c",
+			"settings":
+			{
+				"buffer_size": 14466,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 81.0,
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 181.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/D/files/linux学习/linux device driver/example code/examples/scullc/Package Control Messages",
+		"/D/software/goagent-goagent-v3.2.0-38-g78e7f51/goagent-goagent-2849109/local/proxy.ini",
+		"/D/files/linux学习/linux device driver/example code/examples/scull/Makefile",
+		"/C/goagent/local/proxy.ini",
+		"/D/files/arduino/arduino-1.0.6-windows/arduino-1.0.6/hardware/arduino/cores/arduino/Print.h",
+		"/Z/RTL819xSU_usb_linux_v2.6.6.0.20120405/rtl8712_8188_8191_8192SU_usb_linux_v2.6.6.0.20120405/install.sh",
+		"/D/files/Raspberry_pi/温度和湿度传感器/chapter-3-source-code/pi-dht11/Makefile",
+		"/D/files/Raspberry_pi/温度和湿度传感器/chapter-3-source-code/pi-dht11/Adafruit_DHT.c",
+		"/D/files/arduino/Arduino-master/Arduino-master/libraries/WiFi/WiFi.cpp",
+		"/D/files/arduino/光盘/3.22个例程 代码/例程1-Hello World！/code1/code1.ino",
+		"/Z/trunk/test/fork.c",
+		"/Z/git_hub/linux-kernel-develoment/Makefile",
+		"/D/software/iperf-2.0.5-2-win32/log.txt",
+		"/Y/trunk/test/fsize.c",
+		"/Y/trunk/test/malloc.c",
+		"/C/Users/finlay/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Y/trunk/test/fnew.c",
+		"/C/Users/finlay/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings"
+	],
+	"find":
+	{
+		"height": 39.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"result",
+			"scullc_init",
+			"freep",
+			"base"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "main.c",
+					"settings":
+					{
+						"buffer_size": 14466,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								11996,
+								11996
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 10401.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 39.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"main.c",
+				"scullc/main.c"
+			],
+			[
+				"print",
+				"/D/files/arduino/arduino-1.0.6-windows/arduino-1.0.6/hardware/arduino/cores/arduino/Print.h"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true
+}
