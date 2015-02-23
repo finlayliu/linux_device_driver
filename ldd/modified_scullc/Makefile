@@ -1,46 +1,16 @@
-
-# Comment/uncomment the following line to enable/disable debugging
-#DEBUG = y
-
-
-ifeq ($(DEBUG),y)
-  DEBFLAGS = -O -g -DSCULLC_DEBUG # "-O" is needed to expand inlines
-else
-  DEBFLAGS = -O2
-endif
-
-CFLAGS += $(DEBFLAGS) -I$(LDDINC)
-
-TARGET = scullc
-
 ifneq ($(KERNELRELEASE),)
-
-scullc-objs := main.o
-
-obj-m	:= scullc.o
-
+	obj-m := scull.o
+	scull-objs := main.o mmap.o
 else
-
-KERNELDIR ?= /lib/modules/$(shell uname -r)/build
-PWD       := $(shell pwd)
-
-modules:
-	$(MAKE) -C $(KERNELDIR) M=$(PWD) LDDINC=$(PWD) modules
-
-endif
-
-
-install:
-	install -d $(INSTALLDIR)
-	install -c $(TARGET).o $(INSTALLDIR)
-
+	KERNELDIR := /lib/modules/$(shell uname -r)/build
+	PWD :=$(shell pwd)
+default:
+	$(MAKE) -C $(KERNELDIR) M=$(PWD) 
 clean:
-	rm -rf *.o *~ core .depend .*.cmd *.ko *.mod.c .tmp_versions
-
-
-depend .depend dep:
-	$(CC) $(CFLAGS) -M *.c > .depend
-
-ifeq (.depend,$(wildcard .depend))
-include .depend
+	rm -rf *.o *.mod.o *.mod.c *.symvers modul* .h* .b* .M* .t*
 endif
+
+#obj-m := helloworld.o
+#helloworld-objs := helloworld_main.o
+#PWD :=$(shell pwd)
+#make -C /lib/modules/3.12.22+/build SUBDIRS=$(PWD) modules
