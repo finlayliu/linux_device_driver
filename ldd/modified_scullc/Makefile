@@ -7,7 +7,7 @@ else
 default:
 	$(MAKE) -C $(KERNELDIR) M=$(PWD) 
 clean:
-	rm -rf *.o *.mod.o *.mod.c *.symvers modul* .h* .b* .M* .t*
+	rm -rf *.o *.mod.o *.mod.c *.symvers modul* .h* .b* .M* .t* .*.o.cmd .*.ko.cmd
 endif
 
 #obj-m := helloworld.o

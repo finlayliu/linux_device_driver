@@ -15,7 +15,7 @@
  * $Id: _mmap.c.in,v 1.13 2004/10/18 18:07:36 corbet Exp $
  */
 
-#include <linux/config.h>
+//#include <linux/config.h>
 #include <linux/module.h>
 
 #include <linux/mm.h>		/* everything */
@@ -62,7 +62,7 @@ struct page *scullc_vma_nopage(struct vm_area_struct *vma,
 {
 	unsigned long offset;
 	struct scullc_dev *ptr, *dev = vma->vm_private_data;
-	struct page *page = NOPAGE_SIGBUS;
+	struct page *page = NULL;
 	void *pageptr = NULL; /* default to "missing" */
 
 	down(&dev->sem);
@@ -96,21 +96,21 @@ struct page *scullc_vma_nopage(struct vm_area_struct *vma,
 struct vm_operations_struct scullc_vm_ops = {
 	.open =     scullc_vma_open,
 	.close =    scullc_vma_close,
-	.nopage =   scullc_vma_nopage,
+	//.nopage =   scullc_vma_nopage,
 };
 
 
 int scullc_mmap(struct file *filp, struct vm_area_struct *vma)
 {
-	struct inode *inode = filp->f_dentry->d_inode;
+	//struct inode *inode = filp->f_dentry->d_inode;
 
 	/* refuse to map if order is not 0 */
-	if (scullc_devices[iminor(inode)].order)
-		return -ENODEV;
+	//if (scullc_devices[iminor(inode)].order)
+	//	return -ENODEV;
 
 	/* don't do anything here: "nopage" will set up page table entries */
 	vma->vm_ops = &scullc_vm_ops;
-	vma->vm_flags |= VM_RESERVED;
+	//vma->vm_flags |= VM_RESERVED;
 	vma->vm_private_data = filp->private_data;
 	scullc_vma_open(vma);
 	return 0;

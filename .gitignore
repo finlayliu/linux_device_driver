@@ -30,3 +30,6 @@
 
 # .build-in
 .built-in*
+
+#log
+*.log
