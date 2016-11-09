@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1435931575 source:d:\files\linuxѧϰ\linux device driver\example code\examples\ioctl_learn\ioctl_learn.c
+	<stdio.h>
+	<errno.h>
+	<fcntl.h>
+
